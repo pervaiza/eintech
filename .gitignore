@@ -3,3 +3,6 @@
 ################################################################################
 
 /eintech/eintech.api/bin/Debug/net5.0
+/eintech/eintech.api/obj
+/eintech/eintech.web/bin/Debug/net5.0
+/eintech/eintech.web/obj
