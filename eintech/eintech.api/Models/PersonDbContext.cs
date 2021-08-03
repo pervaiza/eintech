@@ -15,6 +15,11 @@ namespace eintech.api.Models
 
         }
 
+        public PersonDbContext()
+        {
+
+        }
+
         public DbSet<Person> Persons { get; set; }
     }
 }

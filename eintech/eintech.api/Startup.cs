@@ -1,4 +1,6 @@
 using eintech.api.Models;
+using eintech.api.Repositories;
+using eintech.api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -36,6 +38,29 @@ namespace eintech.api
             });
 
             services.AddDbContext<PersonDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            ConfigureLocalServices(services);
+        }
+
+        protected void ConfigureLocalServices(IServiceCollection services)
+        {
+            services.AddTransient<IPersonDeleteService, PersonDeleteService>(provider =>
+            {
+                var dbContext = provider.GetService<PersonDbContext>();
+                return new PersonDeleteService(new PersonRepository(dbContext));
+            });
+
+            services.AddTransient<IPersonReadService, PersonReadService>(provider =>
+            {
+                var dbContext = provider.GetService<PersonDbContext>();
+                return new PersonReadService(new PersonRepository(dbContext));
+            });
+
+            services.AddTransient<IPersonUpdateService, PersonUpdateService>(provider =>
+            {
+                var dbContext = provider.GetService<PersonDbContext>();
+                return new PersonUpdateService(new PersonRepository(dbContext));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
