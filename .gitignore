@@ -6,3 +6,6 @@
 /eintech/eintech.api/obj
 /eintech/eintech.web/bin/Debug/net5.0
 /eintech/eintech.web/obj
+/eintech/eintech.api/bin/Debug/netcoreapp3.1
+/eintech/eintech.domain/bin/Debug
+/eintech/eintech.web/bin/Debug/netcoreapp3.1

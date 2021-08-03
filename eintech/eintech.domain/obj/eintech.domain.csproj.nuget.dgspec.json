@@ -1,32 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {}
+    "D:\\Pervaiz-Development\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {
+    "D:\\Pervaiz-Development\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
+        "projectUniqueName": "D:\\Pervaiz-Development\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
         "projectName": "eintech.domain",
-        "projectPath": "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
-        "packagesPath": "C:\\Users\\makht\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\obj\\",
+        "projectPath": "D:\\Pervaiz-Development\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
+        "packagesPath": "C:\\Users\\pervaiz\\.nuget\\packages\\",
+        "outputPath": "D:\\Pervaiz-Development\\eintech\\eintech\\eintech.domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\makht\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pervaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://regtransfers.pkgs.visualstudio.com/_packaging/Regtransfers/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,8 +43,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

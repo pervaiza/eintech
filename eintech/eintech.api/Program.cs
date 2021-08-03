@@ -1,5 +1,8 @@
+using eintech.api.Extensions;
+using eintech.api.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,14 +16,28 @@ namespace eintech.api
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args)
+                  .MigrateDbContext<PersonDbContext>((context, services) =>
+                  {
+                      var env = ServiceProviderServiceExtensions.GetService<IWebHostEnvironment>(services);
+                      var logger = ServiceProviderServiceExtensions.GetService<ILogger<PersonDbSeedContext>>(services);
+                      new PersonDbSeedContext()
+                      .SeedAsync(context, logger)
+                      .Wait();
+                  })
+                .Run();
+
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IHost CreateHostBuilder(string[] args)
+        {
+            IHostBuilder builder = Host.CreateDefaultBuilder(args);
+            builder.ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+            return builder.Build();
+        }
+        
     }
-}
+}  

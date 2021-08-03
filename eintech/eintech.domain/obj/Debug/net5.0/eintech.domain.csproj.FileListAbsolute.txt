@@ -1,0 +1,12 @@
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\bin\Debug\net5.0\eintech.domain.deps.json
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\bin\Debug\net5.0\eintech.domain.dll
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\bin\Debug\net5.0\ref\eintech.domain.dll
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\bin\Debug\net5.0\eintech.domain.pdb
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\eintech.domain.csproj.AssemblyReference.cache
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\eintech.domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\eintech.domain.AssemblyInfoInputs.cache
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\eintech.domain.AssemblyInfo.cs
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\eintech.domain.csproj.CoreCompileInputs.cache
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\eintech.domain.dll
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\ref\eintech.domain.dll
+D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\net5.0\eintech.domain.pdb
