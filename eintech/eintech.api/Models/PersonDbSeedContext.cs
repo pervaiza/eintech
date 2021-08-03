@@ -33,8 +33,9 @@ namespace eintech.api.Models
                     Email = "burns@hotmail.co.uk",
                     CreatedOn = DateTime.Now
                 });
-
             }
+
+            await context.SaveChangesAsync();
         }
 
     }

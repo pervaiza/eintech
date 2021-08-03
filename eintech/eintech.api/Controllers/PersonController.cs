@@ -65,7 +65,7 @@ namespace eintech.api.Controllers
 
             await _deleteService.Delete(id);
 
-            return Ok();
+            return Ok(id);
         }
 
     }
