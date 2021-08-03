@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eintech.web", "eintech.web\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eintech.api", "eintech.api\eintech.api.csproj", "{9953476E-F82A-4E83-99C7-431AE8182CA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eintech.domain", "eintech.domain\eintech.domain.csproj", "{4C68BAA8-2B83-4711-A5EC-47EE43C3B802}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9953476E-F82A-4E83-99C7-431AE8182CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9953476E-F82A-4E83-99C7-431AE8182CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9953476E-F82A-4E83-99C7-431AE8182CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C68BAA8-2B83-4711-A5EC-47EE43C3B802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C68BAA8-2B83-4711-A5EC-47EE43C3B802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C68BAA8-2B83-4711-A5EC-47EE43C3B802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C68BAA8-2B83-4711-A5EC-47EE43C3B802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
