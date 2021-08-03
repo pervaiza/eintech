@@ -1,4 +1,5 @@
 ﻿using eintech.web.Models;
+using eintech.web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -9,24 +10,23 @@ using System.Threading.Tasks;
 
 namespace eintech.web.Controllers
 {
-    public class HomeController : Controller
+    public class PersonController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger<PersonController> _logger;
+        private readonly IPersonService _personService;
+        public PersonController(ILogger<PersonController> logger, IPersonService personService)
         {
             _logger = logger;
+            _personService = personService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var people = await _personService.Get();
+
+            return View(people);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
