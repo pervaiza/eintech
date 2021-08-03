@@ -10,32 +10,41 @@ namespace eintech.api.Models
     {
         public async Task SeedAsync(PersonDbContext context, ILogger<PersonDbSeedContext> logger)
         {
-            if (!context.Persons.Any())
+            try
             {
-                context.Persons.Add(new domain.Models.Person()
+                if (!context.Persons.Any())
                 {
-                    FirstName = "Pervaiz",
-                    LastName = "Akhtar",
-                    Email = "m.akhtar@hotmail.co.uk",
-                    CreatedOn = DateTime.Now
-                });
-                context.Persons.Add(new domain.Models.Person()
-                {
-                    FirstName = "John",
-                    LastName = "Smith",
-                    Email = "smith@hotmail.co.uk",
-                    CreatedOn = DateTime.Now
-                });
-                context.Persons.Add(new domain.Models.Person()
-                {
-                    FirstName = "James",
-                    LastName = "Burns",
-                    Email = "burns@hotmail.co.uk",
-                    CreatedOn = DateTime.Now
-                });
-            }
+                    context.Persons.Add(new domain.Models.Person()
+                    {
+                        FirstName = "Pervaiz",
+                        LastName = "Akhtar",
+                        Email = "m.akhtar@hotmail.co.uk",
+                        CreatedOn = DateTime.Now
+                    });
+                    context.Persons.Add(new domain.Models.Person()
+                    {
+                        FirstName = "John",
+                        LastName = "Smith",
+                        Email = "smith@hotmail.co.uk",
+                        CreatedOn = DateTime.Now
+                    });
+                    context.Persons.Add(new domain.Models.Person()
+                    {
+                        FirstName = "James",
+                        LastName = "Burns",
+                        Email = "burns@hotmail.co.uk",
+                        CreatedOn = DateTime.Now
+                    });
+                }
 
-            await context.SaveChangesAsync();
+                await context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.ToString());
+                throw;
+            }
+            
         }
 
     }

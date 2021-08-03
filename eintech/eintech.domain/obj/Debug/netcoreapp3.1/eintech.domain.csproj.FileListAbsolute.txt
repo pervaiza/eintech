@@ -7,3 +7,12 @@ D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\ei
 D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.csproj.CoreCompileInputs.cache
 D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.dll
 D:\Pervaiz-Development\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.pdb
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\bin\Debug\netcoreapp3.1\eintech.domain.deps.json
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\bin\Debug\netcoreapp3.1\eintech.domain.dll
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\bin\Debug\netcoreapp3.1\eintech.domain.pdb
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.csproj.AssemblyReference.cache
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.AssemblyInfoInputs.cache
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.AssemblyInfo.cs
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.csproj.CoreCompileInputs.cache
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.dll
+C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.pdb

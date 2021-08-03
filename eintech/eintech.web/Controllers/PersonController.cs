@@ -1,4 +1,5 @@
-﻿using eintech.web.Models;
+﻿using eintech.domain.Models;
+using eintech.web.Models;
 using eintech.web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -27,6 +28,44 @@ namespace eintech.web.Controllers
             return View(people);
         }
 
+        public IActionResult Create()
+        {
+            return View(new Person());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Person person)
+        {
+            if (!ModelState.IsValid)
+                return View(person);
+
+            await _personService.Create(person);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var itemToDelete = await _personService.GetById(id.Value);
+
+            return View(itemToDelete);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
+        {
+            await _personService.Delete(id);
+
+            return RedirectToAction(nameof(Index));
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
