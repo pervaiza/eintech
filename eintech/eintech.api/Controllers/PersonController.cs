@@ -25,9 +25,9 @@ namespace eintech.api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public IActionResult Get()
         {
-            var people = await _readService.Get();
+            var people = _readService.Get().ToList();
 
             if (people == null)
                 return NotFound();

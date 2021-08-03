@@ -20,9 +20,9 @@ namespace eintech.api.Services
             _personRepository = personRepository;
         }
 
-        public Task Delete(Guid id)
+        public async Task Delete(Guid id)
         {
-            throw new NotImplementedException();
+            await _personRepository.Delete(id);
         }
     }
 }

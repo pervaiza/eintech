@@ -15,14 +15,14 @@ namespace eintech.unit_tests
         private Guid TestId1 = Guid.Parse("cde3dd81-ea26-45b7-afc9-5eec13c80d08");
 
         [Fact]
-        public async Task PersonRepository_Get()
+        public void PersonRepository_Get()
         {
             //Arrange 
             Setup();
 
             //Act
             IPersonRepository repository = new PersonRepository(_dbContext);
-            var people = await repository.Get().ToListAsync();
+            var people =  repository.Get();
 
             //Assert
             Assert.NotNull(people);

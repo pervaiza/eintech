@@ -10,7 +10,7 @@ namespace eintech.api.Services
 {
     public interface IPersonReadService
     {
-        Task<List<Person>> Get();
+        List<Person> Get();
 
         Task<Person> GetById(Guid id);
     }
@@ -24,9 +24,9 @@ namespace eintech.api.Services
             _personRepository = personRepository;
         }
 
-        public async Task<List<Person>> Get()
+        public  List<Person> Get()
         {
-            return await _personRepository.Get().ToListAsync();
+            return _personRepository.Get().ToList();
         }
 
         public async Task<Person> GetById(Guid id)

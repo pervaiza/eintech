@@ -10,7 +10,7 @@ namespace eintech.api.Repositories
 {
     public interface IGenericRepository<TEntity> where TEntity : class
     {
-        IQueryable<TEntity> Get();
+        IEnumerable<TEntity> Get();
 
         Task<TEntity> GetByIdAsync(Guid id);
 
@@ -33,13 +33,11 @@ namespace eintech.api.Repositories
             _dbContext = dbContext;
         }
 
-        public virtual IQueryable<TEntity> Get()
+        public virtual IEnumerable<TEntity> Get()
         {
             DbSet<TEntity> dbSet = _dbContext.Set<TEntity>();
 
-            IQueryable<TEntity> query = dbSet;
-
-            return query;
+            return dbSet.ToList();
         }
 
         public virtual async Task<TEntity> GetByIdAsync(Guid id)
