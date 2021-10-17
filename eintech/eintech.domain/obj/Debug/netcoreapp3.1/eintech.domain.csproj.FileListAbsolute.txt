@@ -16,3 +16,13 @@ C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreap
 C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.csproj.CoreCompileInputs.cache
 C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.dll
 C:\Users\Pervaiz\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.pdb
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\bin\Debug\netcoreapp3.1\eintech.domain.deps.json
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\bin\Debug\netcoreapp3.1\eintech.domain.dll
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\bin\Debug\netcoreapp3.1\eintech.domain.pdb
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.csproj.AssemblyReference.cache
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.AssemblyInfoInputs.cache
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.AssemblyInfo.cs
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.csproj.CoreCompileInputs.cache
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.dll
+C:\Users\makht\source\repos\eintech\eintech\eintech.domain\obj\Debug\netcoreapp3.1\eintech.domain.pdb

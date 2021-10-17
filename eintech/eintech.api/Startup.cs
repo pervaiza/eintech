@@ -1,3 +1,4 @@
+using Azure.Storage.Queues;
 using eintech.api.Models;
 using eintech.api.Repositories;
 using eintech.api.Services;
@@ -5,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -37,9 +39,19 @@ namespace eintech.api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "eintech.api", Version = "v1" });
             });
 
-            services.AddDbContext<PersonDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<PersonDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("SqlConnection")));
 
             ConfigureLocalServices(services);
+
+            services.AddAzureClients(builder =>
+            {
+                builder.AddClient<QueueClient, QueueClientOptions>(options =>
+                 {
+                     var queueConnection = Configuration.GetConnectionString("QueuePersonDbConnection");
+                     var queueName = Configuration.GetConnectionString("QueueName");
+                     return new QueueClient(queueConnection, queueName);
+                 });
+            });
         }
 
         protected void ConfigureLocalServices(IServiceCollection services)

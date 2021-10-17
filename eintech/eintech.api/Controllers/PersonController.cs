@@ -1,10 +1,10 @@
-﻿using eintech.api.Services;
+﻿using Azure.Storage.Queues;
+using eintech.api.Services;
 using eintech.domain.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace eintech.api.Controllers
@@ -16,12 +16,16 @@ namespace eintech.api.Controllers
         IPersonDeleteService _deleteService;
         IPersonReadService _readService;
         IPersonUpdateService _updateService;
+        private QueueClient _queueClient;
 
-        public PersonController(IPersonDeleteService deleteService,IPersonReadService readService,IPersonUpdateService updateService)
+        public PersonController(IPersonDeleteService deleteService,IPersonReadService readService,
+            IPersonUpdateService updateService,
+            QueueClient queueClient)
         {
             _deleteService = deleteService;
             _readService = readService;
             _updateService = updateService;
+            _queueClient = queueClient;
         }
 
         [HttpGet]
@@ -53,7 +57,10 @@ namespace eintech.api.Controllers
             if (person == null)
                 return BadRequest();
 
-            return Ok(await _updateService.Create(person));
+            await _updateService.Create(person);
+            await _queueClient.SendMessageAsync(JsonSerializer.Serialize(person),null,TimeSpan.FromSeconds(100));
+            
+            return Ok(person);
         }
 
 

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pervaiz\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {}
+    "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pervaiz\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {
+    "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pervaiz\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
+        "projectUniqueName": "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
         "projectName": "eintech.domain",
-        "projectPath": "C:\\Users\\Pervaiz\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
-        "packagesPath": "C:\\Users\\Pervaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pervaiz\\source\\repos\\eintech\\eintech\\eintech.domain\\obj\\",
+        "projectPath": "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\eintech.domain.csproj",
+        "packagesPath": "C:\\Users\\makht\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makht\\source\\repos\\eintech\\eintech\\eintech.domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Pervaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\makht\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
